@@ -5,7 +5,7 @@ resource "aws_vpc" "vpc_master" {
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = {
-    Name = "master-vpc-jenkins-poe"
+    Name = "master-vpc-jenkins-node"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_vpc" "vpc_master_london" {
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = {
-    Name = "worker-vpc-jenkins-poe"
+    Name = "worker-vpc-jenkins-node"
   }
 }
 
